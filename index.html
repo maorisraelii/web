@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="he">
+<head>
+    <title>תוצאות מודלים</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<div class="wrapper">
+<body>
+    <div class="page">
+        <div class="background">
+            <img src="images/background.png" alt="רקע">
+        </div>
+        <div class="container">
+            <h1>ברוך הבא לפרוייקט "שימוש ברשתות חברתיות לניבוי שוק ההון"</h1>
+            <p>במחקר שלנו, בחרנו לבדוק האם קיים קשר בין ציוצים ברשת החברתית "טוויטר" של אנשי עולם בכירים, לבין השינויים המתרחשים במניות בבורסה העולמית. הסיבה שבגינה בחרנו לעסוק בתחום זה היא שבמידה ואכן נמצא כי יש קשר ישיר בין ציוצם של בכירי העולם בפלטפורמה זו, לבין שוק המניות, אזי שנוכל לבנות וליצור אלגוריתם אשר יהווה מודל לחיזוי וניבוי שוק המניות העתידי שיתבסס על סמך ציוצם של אישים משפיעים אלה.</p>
+            <p>במהלך המחקר, אנחנו מנסים להשתמש בנתוני הציוצים של אנשי עולם בכירים מרשת ה"טוויטר" אשר פורסמו בעבר על מנת לבדוק האם קיים קשר בין הציוצים הללו לבין התנודות והשינויים במניות בשוק ההון.</p>
+            <p>נשתמש במודל חיזוי המבוסס על נתוני העבר ונתוני הציוצים הקודמים מרשת הטוויטר של אנשי עולם בכירים כדי להבין ולחזות מה יקרה בעתיד ואילו עשויות להיות השינויים במניות ובמדדים מרכזיים בשוק ההון.</p>
+            <div class="tabs">
+                <button class="tablink" onclick="openTab(event, 'results')">טבלת תוצאות</button>
+                <button class="tablink" onclick="openTab(event, 'noSentiment')">ללא סנטימנט</button>
+                <button class="tablink" onclick="openTab(event, 'withSentiment')">עם סנטימנט</button>
+            </div>
+            <div id="results" class="tabcontent">
+                <h2>תוצאות</h2>
+                <p>בעמוד זה ניתן לראות טבלה של כל התוצאות שקיבלנו</p>
+                <img src="images\stat.png" alt="תוצאות">
+            </div>
+            <div id="noSentiment" class="tabcontent">
+                <h2>ללא סנטימנט</h2>
+                <p>בתרשים הבא ניתן לראות את תוצאות החיזוי של המודל עם 8 ימי הסתכלות אחורנית כאשר מחיר המנייה האמיתי הוא באדום והמחיר שהמודל חוזה הוא בכחול.</p>
+                <img src="images/model_without_sentiment.png" alt="ללא סנטימנטים">
+            </div>
+            <div id="withSentiment" class="tabcontent">
+                <div class="subtabs">
+                    <button class="subtablink" onclick="openSubTab(event, 'biden')">ג'ו ביידן</button>
+                    <button class="subtablink" onclick="openSubTab(event, 'bill')">ביל גייטס</button>
+                    <button class="subtablink" onclick="openSubTab(event, 'jeff')">ג'ף בזוס</button>
+                    <button class="subtablink" onclick="openSubTab(event, 'musk')">אילון מאסק</button>
+                    <button class="subtablink" onclick="openSubTab(event, 'tim')">טים קוק</button>
+                    <button class="subtablink" onclick="openSubTab(event, 'trump')">דונלד טראמפ</button>
+                </div>
+                <div id="biden" class="subtabcontent">
+                    <h2>ג'ו ביידן</h2>
+                    <p>בתרשים הבא ניתן לראות את תוצאות החיזוי של המודל עם סנטימנט של ג'ו ביידן כאשר מחיר המנייה האמיתי הוא באדום והמחיר שהמודל חוזה הוא בכחול.</p>
+                    <img src="images/model_biden.png" alt="ג'ו ביידן">
+                </div>
+                <div id="bill" class="subtabcontent">
+                    <h2>ביל גייטס</h2>
+                    <p>בתרשים הבא ניתן לראות את תוצאות החיזוי של המודל עם סנטימנט של ביל גייטס כאשר מחיר המנייה האמיתי הוא באדום והמחיר שהמודל חוזה הוא בכחול.</p>
+                    <img src="images/model_bill.png" alt="ביל גייטס">
+                </div>
+                <div id="jeff" class="subtabcontent">
+                    <h2>ג'ף בזוס</h2>
+                    <p>בתרשים הבא ניתן לראות את תוצאות החיזוי של המודל עם סנטימנט של ג'ף בזוס כאשר מחיר המנייה האמיתי הוא באדום והמחיר שהמודל חוזה הוא בכחול.</p>
+                    <img src="images/model_jeff.png" alt="ג'ף בזוס">
+                </div>
+                <div id="musk" class="subtabcontent">
+                    <h2>אילון מאסק</h2>
+                    <p>בתרשים הבא ניתן לראות את תוצאות החיזוי של המודל עם סנטימנט של אילון מאסק כאשר מחיר המנייה האמיתי הוא באדום והמחיר שהמודל חוזה הוא בכחול.</p>
+                    <img src="images/model_musk.png" alt="אילון מאסק">
+                </div>
+                <div id="tim" class="subtabcontent">
+                    <h2>טים קוק</h2>
+                    <p>בתרשים הבא ניתן לראות את תוצאות החיזוי של המודל עם סנטימנט של טים קוק כאשר מחיר המנייה האמיתי הוא באדום והמחיר שהמודל חוזה הוא בכחול.</p>
+                    <img src="images/model_tim.png" alt="טים קוק">
+                </div>
+                <div id="trump" class="subtabcontent">
+                    <h2>דונלד טראמפ</h2>
+                    <p>בתרשים הבא ניתן לראות את תוצאות החיזוי של המודל עם סנטימנט של דונלד טראמפ כאשר מחיר המנייה האמיתי הוא באדום והמחיר שהמודל חוזה הוא בכחול.</p>
+                    <img src="images/model_trump.png" alt="דונלד טראמפ">
+                </div>
+            </div>
+        </div>
+        <div class="footer" dir="ltr" lang="en">
+            <p>© 2023 Maor Israeli & Vladimir Alkin</p>
+        </div>
+    <script src="scripts.js"></script>
+</body>
+</div>
+</html>
