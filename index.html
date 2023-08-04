@@ -91,7 +91,12 @@
             בגלל המנגנון שבו בנויה רשת LTSM הרשת מסוגלת ללמוד תלות ארוכת טווח מכיוון שהיא יכולה לזכור מידע במשך תקופה ארוכה בניגוד לרשתות עצביות אחרות כמו RNN שיכולות לזכור מידע לפרקי זמן קצרים.
             
         </p>
-        <img src="lstm_model_equation.jpg" alt="משוואת LSTM מודל">
+        <h3>משוואת המודל ללא סנטימנט</h3>
+        <p>כאשר 𝑺𝒕 הוא הערך החזוי של הערך היומי של S&P 500 בזמן 't', 𝑺𝑷𝟓𝟎𝟎𝒕−i הן הערכים היומיים מהעבר בפיגור של i.</p>
+        <img src="images\eq without sentiment.png" alt="משוואה ללא סנטימנט">
+        <h3>משוואת המודל עם סנטימנט</h3>
+        <p>כאשר 𝑺𝒕 הוא הערך החזוי של הערך היומי של S&P 500 בזמן 't', 𝑺𝑷𝟓𝟎𝟎𝒕−i הן הערכים היומיים מהעבר בפיגור של הערך i, 𝑺𝑰𝒕−i הם ערכי אינדקס הסנטימנט מהעבר, בפיגור של i.</p>
+        <img src="images\eq with sentiment.jpg" alt="משוואה עם סנטימנט">
     </section>
 
     <section id="evaluation-metrics">
