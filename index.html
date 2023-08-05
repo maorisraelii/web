@@ -92,10 +92,16 @@
             
         </p>
         <h3>משוואת המודל ללא סנטימנט</h3>
-        <p>כאשר 𝑺𝒕 הוא הערך החזוי של הערך היומי של S&P 500 בזמן 't', 𝑺𝑷𝟓𝟎𝟎𝒕−i הן הערכים היומיים מהעבר בפיגור של i.</p>
+        <p>כאשר 𝑺𝒕 הוא הערך החזוי של הערך היומי של S&P 500 בזמן 't', 𝑺𝑷𝟓𝟎𝟎𝒕−i הן הערכים היומיים מהעבר בפיגור של i.
+            <br>
+            במודל הטוב ביותר שנבחר ללא סנטימנט ערך ה-i הוא 8 (ימים)
+        </p>
         <img src="images\eq without sentiment.png" alt="משוואה ללא סנטימנט">
         <h3>משוואת המודל עם סנטימנט</h3>
-        <p>כאשר 𝑺𝒕 הוא הערך החזוי של הערך היומי של S&P 500 בזמן 't', 𝑺𝑷𝟓𝟎𝟎𝒕−i הן הערכים היומיים מהעבר בפיגור של הערך i, 𝑺𝑰𝒕−i הם ערכי אינדקס הסנטימנט מהעבר, בפיגור של i.</p>
+        <p>כאשר 𝑺𝒕 הוא הערך החזוי של הערך היומי של S&P 500 בזמן 't', 𝑺𝑷𝟓𝟎𝟎𝒕−i הן הערכים היומיים מהעבר בפיגור של הערך i, 𝑺𝑰𝒕−i הם ערכי אינדקס הסנטימנט מהעבר, בפיגור של i.
+            <br>
+            ערך ה-i שנבחר למודלים שלנו הוא פיגור של 1 ימים.
+        </p>
         <img src="images\eq with sentiment.jpg" alt="משוואה עם סנטימנט">
     </section>
 
@@ -185,7 +191,12 @@
 
     <section id="graphs">
         <h2>גרפים</h2>
-        <p>בתרשימים הבאים ניתן לראות את תוצאות החיזוי של המודלים השונים כאשר מחיר המנייה האמיתי הוא באדום והמחיר שהמודל חוזה הוא בכחול.</p>
+        <p>בתרשימים הבאים ניתן לראות את תוצאות החיזוי של המודלים השונים כאשר מחיר המנייה האמיתי הוא באדום והמחיר שהמודל חוזה הוא בכחול.
+            <br>
+            ציר ה-y בגרפים מייצג את מחיר המנייה המנורמל.
+            <br>
+            ציר ה-x מייצג את פרק הזמן שעבר מתחילת המודל בימים.
+        </p>
         <div class="graph">
             <h3>מודל ללא סנטימנט</h3>
             <img src="images/model_without_sentiment.png" alt="ללא סנטימנטים">
